@@ -1,5 +1,9 @@
 # startpage
 
-Yet another startpage, made with plain HTML & CSS.
+Yet another minimal startpage:
+- Font: Pragmata Pro (not included)
+- Theme: Gruvbox Material
 
-![img](https://i.imgur.com/HyLjta2.png)
+### Preview:
+
+![img](https://i.imgur.com/N8EiI4d.png)

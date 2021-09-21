@@ -26,15 +26,25 @@ nav {
 	display: grid;
 	grid-row-gap: 1em;
 	grid-template-columns: 1fr 1fr;
-	margin: 0 1em;
 	min-width: 24em;
+  grid-auto-rows: max-content;
 }
 
 h1 {
-	font-size: 2.3em;
+	font-size: 2.2em;
 	font-weight: 600;
 	grid-column: 1/-1;
 	text-align: center;
+  margin-bottom: 0;
+}
+
+h2 {
+	font-size: 1.2em;
+	font-weight: 600;
+  color: #928374;
+	grid-column: 1/-1;
+	text-align: center;
+  margin-bottom: 2.3em;
 }
 
 ul {
@@ -46,21 +56,21 @@ ul {
 
 li {
   line-height: 1.4em;
-  font-size: 1.13em;
+  margin-left: 4.8em;
 }
 li:first-child {
   display: inline-block;
   color:#a9b665;
+  font-size: 1.6em;
 	font-weight: bold;
-  font-size: 1.55em;
   text-align: center;
 	line-height: 2em;
-  margin-left: 2em;
+  margin-left: 2.5em;
 }
 
 a {
 	color: #928374;
-	margin-left: 4em;
+  font-size: 1.1em;
 	text-decoration: none;
 }
 a:hover {
