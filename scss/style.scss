@@ -1,3 +1,5 @@
+@import "theme.scss";
+
 html {
   align-items: center;
   display: flex;
@@ -7,9 +9,9 @@ html {
 
 body {
   display: flex;
-  color: #dcd9c0;
-  background: #101010;
-  font-family: Pragmata Pro;
+  color: $themeFg;
+  background: $themeBg;
+  font-family: $fontFace;
   margin-right: 9em;
   padding: 1em;
 }
@@ -19,7 +21,9 @@ img {
   width: 350px;
   margin-right: 2em;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 nav {
@@ -31,17 +35,17 @@ nav {
 }
 
 h1 {
-  font-size: 2.2em;
-  font-weight: 600;
+  font-size: $fontH1Size;
+  font-weight: $fontWeight;
   grid-column: 1/-1;
   text-align: center;
   margin-bottom: 0;
 }
 
 h2 {
-  font-size: 1.2em;
-  font-weight: 600;
-  color: #525252;
+  font-size: $fontH2Size;
+  font-weight: $fontWeight;
+  color: $themeFgAlt;
   grid-column: 1/-1;
   text-align: center;
   margin-bottom: 2.3em;
@@ -58,24 +62,22 @@ li {
   line-height: 1.4em;
   margin-left: 4.8em;
 }
-
 li:first-child {
   display: inline-block;
-  color: #daa6c3;
-  font-size: 1.5em;
-  font-weight: 600;
+  color: $themeAccent;
+  font-size: $fontLiFCSize;
+  font-weight: $fontWeight;
   text-align: center;
   line-height: 2em;
   margin-left: 2.5em;
 }
 
 a {
-  color: #525252;
+  color: $themeFgAlt;
   font-size: 1.1em;
   text-decoration: none;
 }
-
 a:hover {
-  color: #e0db96;
-  font-style: italic;
+  color: $themeHover;
+  font-style: $fontHoverStyle;
 }
