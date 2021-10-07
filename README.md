@@ -2,8 +2,11 @@
 
 Yet another minimal startpage:
 - Font: Pragmata Pro (not included)
-- Theme: Gruvbox Material
+- Theme: Nightfall
+
+## Configuration
+Simply edit `scss/theme.scss` and setup favourite font and colors!
 
 ### Preview:
 
-![img](https://i.imgur.com/N8EiI4d.png)
+![img](preview.png)
