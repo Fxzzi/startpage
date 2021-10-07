@@ -19,7 +19,7 @@ function showTime() {
 }
 
 function addZero(i) {
-	if (i < 10) i = "0" + i;
+	if (i.length < 2) i = "0" + i;
 	return i;
 }
 
