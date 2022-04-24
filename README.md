@@ -1,8 +1,8 @@
 # startpage
 
 Yet another minimal startpage:
-- Font: Pragmata Pro (not included)
-- Theme: Nightfall
+- Font: Iosevka (not included)
+- Theme: Catpuccin
 
 > **NOTE**: keep it in mind that I don't own any rights to image included in this repo.
 
