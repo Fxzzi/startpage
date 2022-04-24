@@ -7,8 +7,8 @@ html {
 
 body {
   display: flex;
-  color: #dcd9c0;
-  background: #101010;
+  color: #F5C2E7;
+  background: #1E1E2E;
   font-family: Iosevka;
   margin-right: 9em;
   padding: 1em;
@@ -61,7 +61,7 @@ li {
 
 li:first-child {
   display: inline-block;
-  color: #daa6c3;
+  color: #89DCEB;
   font-size: 1.5em;
   font-weight: 600;
   text-align: center;
@@ -70,12 +70,12 @@ li:first-child {
 }
 
 a {
-  color: #525252;
+  color: #D9E0EE;
   font-size: 1.1em;
   text-decoration: none;
 }
 
 a:hover {
-  color: #e0db96;
+  color: #1E1E2E;
   font-style: italic;
 }
