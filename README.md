@@ -1,7 +1,7 @@
 # startpage
 
 Yet another minimal startpage:
-- Font: Iosevka (not included)
+- Font: Iosevka
 - Theme: Catpuccin
 
 > **NOTE**: keep it in mind that I don't own any rights to image included in this repo.
