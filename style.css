@@ -1,3 +1,6 @@
+@font-face {
+  font-family: Font;
+  src: url("https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Iosevka/Regular/complete/Iosevka%20Nerd%20Font%20Complete%20Windows%20Compatible.ttf");
 html {
   align-items: center;
   display: flex;
@@ -9,7 +12,6 @@ body {
   display: flex;
   color: #F5C2E7;
   background: #1E1E2E;
-  font-family: Iosevka;
   margin-right: 9em;
   padding: 1em;
 }
