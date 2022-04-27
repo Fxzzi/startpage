@@ -2,7 +2,7 @@
 
 Yet another minimal startpage:
 - Font: Iosevka
-- Theme: Catpuccin
+- Theme: Catppuccin
 
 > **NOTE**: keep it in mind that I don't own any rights to image included in this repo.
 
