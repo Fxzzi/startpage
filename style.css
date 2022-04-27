@@ -1,8 +1,3 @@
-@font-face {
-    font-family: Iosevka;
-    src: url("./Iosevka.ttf") format('truetype');
-}
-
 html {
   align-items: center;
   display: flex;
