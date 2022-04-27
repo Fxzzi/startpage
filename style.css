@@ -1,6 +1,6 @@
 @font-face {
     font-family: Iosevka;
-    src: url("../Iosevka.ttf") format('truetype');
+    src: url("./Iosevka.ttf") format('truetype');
 }
 
 html {
