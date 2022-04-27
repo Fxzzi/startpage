@@ -1,7 +1,8 @@
 @font-face {
-  font-family: Font;
-  src: url("./Iosevka Nerd Font Complete Windows Compatible.ttf");
+    font-family: Iosevka;
+    src: url("../Iosevka.ttf") format('truetype');
 }
+
 html {
   align-items: center;
   display: flex;
@@ -14,7 +15,6 @@ body {
   color: #F5C2E7;
   background: #1E1E2E;
   margin-right: 9em;
-  font-family: Font;
   padding: 1em;
 }
 
