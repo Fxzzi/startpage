@@ -1,4 +1,4 @@
-# startpage
+# [startpage](https://fazzi.gitlab.io/startpage/ "startpage")
 
 Yet another minimal startpage:
 - Font: JetBrainsMono Nerd Font
