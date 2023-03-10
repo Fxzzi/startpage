@@ -1,6 +1,8 @@
 @font-face {
-  font-family: "Font";
-  src: url("./JetBrains.ttf");
+  font-family: "JetBrains";
+  src:
+    local('JetBrains Mono Regular Nerd Font Complete'),
+    url('./JetBrains.ttf');
 }
 
 html {
@@ -14,20 +16,24 @@ body {
   display: flex;
   color: #bb9af7;
   background: #1a1b26;
-  margin-right: 9em;
   padding: 1em;
-  font-family: Font;
+  font-family: JetBrains;
 }
 
 img {
-  height: 600px;
-  width: 350px;
-  margin-right: 2em;
-  border-radius: 5px;
+  height: 500px;
+  margin-right: 1em;
+  border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-nav {
+@media (max-width: 775px) {
+  img {
+    display: none;
+  }
+}
+
+link-grid {
   display: grid;
   grid-row-gap: 1em;
   grid-template-columns: 1fr 1fr;
@@ -35,33 +41,30 @@ nav {
   grid-auto-rows: max-content;
 }
 
-h1 {
+greeting {
   font-size: 2.2em;
-  font-weight: 600;
+  font-weight: bold;
   grid-column: 1/-1;
   text-align: center;
   margin-bottom: 0;
 }
 
-h2 {
+date {
   font-size: 1.2em;
   font-weight: 600;
   color: #7aa2f7;
   grid-column: 1/-1;
   text-align: center;
-  margin-bottom: 2.3em;
+  margin-bottom: 1em;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
+url-list {
   white-space: nowrap;
   list-style-type: none;
 }
 
 li {
-  line-height: 1.4em;
-  margin-left: 4.8em;
+  margin-left: 4em;
 }
 
 li:first-child {
@@ -71,7 +74,7 @@ li:first-child {
   font-weight: 600;
   text-align: center;
   line-height: 2em;
-  margin-left: 2.5em;
+  margin-left: 2em;
 }
 
 a {
