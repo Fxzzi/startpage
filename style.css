@@ -47,7 +47,6 @@ greeting {
   font-weight: bold;
   grid-column: 1/-1;
   text-align: center;
-  margin-bottom: 0;
 }
 
 date {
@@ -65,7 +64,7 @@ url-list {
 }
 
 li {
-  margin-left: 4em;
+  margin-left: 3.8em;
 }
 
 li:first-child {
@@ -75,7 +74,7 @@ li:first-child {
   font-weight: 600;
   text-align: center;
   line-height: 2em;
-  margin-left: 2em;
+  margin-left: 1.8em;
 }
 
 a {
