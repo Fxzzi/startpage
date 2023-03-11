@@ -2,6 +2,7 @@
   font-family: "JetBrains";
   src:
     local('JetBrains Mono Regular Nerd Font Complete'),
+    url('../src/JetBrains.woff2'),
     url('../src/JetBrains.ttf');
 }
 
