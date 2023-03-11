@@ -22,10 +22,51 @@ body {
 
 img {
   height: 500px;
+  width: auto;
   margin-top: -1em;
   margin-right: 1em;
   border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.12);
+  opacity: 1;
+  animation: fadeIn ease-in-out 0.5s;
+  transition: transform .2s;
+}
+
+img:hover {
+  transform: scale(1.1); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+}
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.slide-in {
+  animation: slide-in 0.5s ease-in-out forwards;
+}
+
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  20% {
+    transform: translateX(100%);
+    opacity: 0;
+}
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @media (max-width: 775px) {
@@ -85,5 +126,5 @@ a {
 
 a:hover {
   color: #e0af68;
-  font-style: italic;
+  border-bottom: 1px solid;
 }
