@@ -14,8 +14,8 @@ html {
 
 body {
   display: flex;
-  color: #D2C7CB;
-  background: #15191d;
+  color: #bb9af7;
+  background: #1a1b26;
   padding: 1em;
   font-family: JetBrains;
 }
@@ -93,7 +93,7 @@ greeting {
 date {
   font-size: 1.2em;
   font-weight: 600;
-  color: #28725A;
+  color: #7aa2f7;
   grid-column: 1/-1;
   text-align: center;
   margin-bottom: 1em;
@@ -104,25 +104,26 @@ url-list {
   list-style-type: none;
 }
 
+url-list:nth-child(even) {
+  margin-left: -1em;
+}
+
 li {
   margin-left: 1.3em;
 }
 
 li:first-child {
   display: inline-block;
-  color: #28725A;
+  color: #7aa2f7;
   font-size: 1.5em;
   font-weight: 600;
+  text-align: center;
   line-height: 2em;
   margin-left: 0em;
 }
 
-url-list:nth-child(even) {
-  margin-left: 0em;
-}
-
 a {
-  color: #9fadc6;
+  color: #717189;
   font-size: 1.1em;
   text-decoration: none;
 }
@@ -131,4 +132,3 @@ a:hover {
   color: #e0af68;
   border-bottom: 1px solid;
 }
-

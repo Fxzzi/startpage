@@ -1,15 +1,21 @@
-# [startpage](https://fazzi.gitlab.io/startpage/ "startpage")
+# startpage
 
 Yet another minimal startpage:
 - Font: JetBrainsMono Nerd Font
-- Colour Scheme: Tokyo Night
+- Colour Scheme(s): Tokyo Night, Colours derived from cover image
 
 > **NOTE**: keep it in mind that I don't own any rights to image included in this repo.
 
-## Configuration
+[fazzi's startpage](https://fazzi.gitlab.io/startpage/fazzi/ "fazzi's startpage")
 
-Edit `index.html` and setup your favourite sites and links!
+[sam's startpage](https://fazzi.gitlab.io/startpage/sam/ "sam's startpage")
 
-### Preview:
+[kunzooz's startpage](https://fazzi.gitlab.io/startpage/kunzooz/ "kunzooz's startpage")
 
-![img](preview.png)
+### Previews:
+
+![img](preview/fazzi.png)
+
+![img](preview/sam.png)
+
+![img](preview/kunzooz.png)
