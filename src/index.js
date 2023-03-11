@@ -19,4 +19,3 @@ function showTime() {
 
 setInterval(showTime, 1);
 showTime()
-

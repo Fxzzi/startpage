@@ -127,9 +127,10 @@ a {
   color: #717189;
   font-size: 1.1em;
   text-decoration: none;
+  transition: color ease-out 0.2s;
 }
 
 a:hover {
-  color: #e0af68;
-  border-bottom: 1px solid;
+  color: #CDD6F4;
+  font-style: italic
 }
