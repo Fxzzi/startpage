@@ -21,6 +21,7 @@ body {
   background: var(--bg-color);
   padding: 1em;
   font-family: JetBrains;
+  transition: background 0.5s ease-out, color 0.5s ease-out;
 }
 
 img {
@@ -106,6 +107,7 @@ date {
   grid-column: 1/-1;
   text-align: center;
   margin-bottom: 1em;
+  transition: color 0.5s ease-out;
 }
 
 url-list {
@@ -125,6 +127,7 @@ li:first-child {
   text-align: center;
   line-height: 2em;
   margin-left: 1em;
+  transition: color 0.5s ease-out;
 }
 
 a {

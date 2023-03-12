@@ -14,12 +14,14 @@ const imageFiles = ["../src/images/image1.jpg", "../src/images/image2.jpg", "../
 const tokyoNightPurple = "#bb9af7";
 const tokyoNightBackground = "#1a1b26"
 const tokyoNightBlue = "#7aa2f7"
+const tokyoNightForeground = "#CDD6F4"
+const tokyoNightYellow = "#E0AF68"
 
 // Define color arrays for each image
 const colors = [
-  { color: tokyoNightPurple, background: tokyoNightBackground, hlcol: tokyoNightBlue, linkcol: "#CDD6F4", hovercol: "#e0af68" }, // colors for image 1
-  { color: "#D2C7CB", background: "#15191d", hlcol: "#28725A", linkcol: "#9fadc6", hovercol: "#e0af68" }, // colors for image 2
-  { color: tokyoNightPurple, background: tokyoNightBackground, hlcol: tokyoNightBlue, linkcol: "#717189", hovercol: "#CDD6F4" }, // colors for image 3
+  { color: tokyoNightYellow, background: tokyoNightBackground, hlcol: tokyoNightBlue, linkcol: "#A8B8CF", hovercol: tokyoNightPurple }, // colors for image 1
+  { color: "#D2C7CB", background: "#15191d", hlcol: "#28725A", linkcol: "#9fadc6", hovercol: "#9B5856" }, // colors for image 2
+  { color: tokyoNightPurple, background: tokyoNightBackground, hlcol: tokyoNightBlue, linkcol: tokyoNightForeground, hovercol: tokyoNightYellow },  // colors for image 3
 ];
 
 // Define a function to preload the images
