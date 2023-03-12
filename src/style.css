@@ -6,6 +6,8 @@
     url('../src/JetBrains.ttf');
 }
 
+
+
 html {
   align-items: center;
   display: flex;
@@ -15,8 +17,8 @@ html {
 
 body {
   display: flex;
-  color: #D2C7CB;
-  background: #15191d;
+  color: var(--secondary-color);
+  background: var(--bg-color);
   padding: 1em;
   font-family: JetBrains;
 }
@@ -100,7 +102,7 @@ greeting {
 date {
   font-size: 1.2em;
   font-weight: 600;
-  color: #28725A;
+  color: var(--accent-color);
   grid-column: 1/-1;
   text-align: center;
   margin-bottom: 1em;
@@ -112,31 +114,27 @@ url-list {
 }
 
 li {
-  margin-left: 1.3em;
+  margin-left: 2.8em;
 }
 
 li:first-child {
   display: inline-block;
-  color: #28725A;
+  color: var(--accent-color);
   font-size: 1.5em;
   font-weight: 600;
+  text-align: center;
   line-height: 2em;
-  margin-left: 0em;
-}
-
-url-list:nth-child(even) {
-  margin-left: 0em;
+  margin-left: 1em;
 }
 
 a {
-  color: #9fadc6;
+  color: var(--primary-color);
   font-size: 1.1em;
   text-decoration: none;
   transition: color ease-out 0.2s;
 }
 
 a:hover {
-  color: #e0af68;
+  color:var(--link-accent-color);
   font-style: italic;
 }
-
