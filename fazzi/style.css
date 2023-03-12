@@ -23,18 +23,24 @@ body {
 
 img {
   height: 500px;
-  width: 100%;
+  width: 292px;
   margin-top: -1em;
   margin-right: 2em;
   border-radius: 6px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.12);
   opacity: 1;
   animation: fadeIn ease-in-out 0.5s;
-  transition: all .2s;
+  transition: transform 0.2s, opacity 0.2s ease-out;
+  object-fit: cover;
+}
+
+.fade-out {
+  opacity: 0;
 }
 
 img:hover {
   transform: scale(1.1); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  cursor: pointer;
 }
 
 @keyframes fadeIn {
@@ -123,9 +129,10 @@ a {
   color: #CDD6F4;
   font-size: 1.1em;
   text-decoration: none;
+  transition: color ease-out 0.2s;
 }
 
 a:hover {
   color: #e0af68;
-  border-bottom: 1px solid;
+  font-style: italic;
 }

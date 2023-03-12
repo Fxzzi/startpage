@@ -12,10 +12,6 @@ Yet another minimal startpage:
 
 [kunzooz's startpage](https://fazzi.gitlab.io/startpage/kunzooz/ "kunzooz's startpage")
 
-### Previews:
+### Preview:
 
-![img](preview/fazzi.png)
-
-![img](preview/sam.png)
-
-![img](preview/kunzooz.png)
+![img](preview.gif)
