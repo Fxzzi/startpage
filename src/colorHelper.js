@@ -6,6 +6,7 @@
 // 1st one grabs the image div, second grabs the image itself
 const imageDiv = document.getElementById("imageDiv");
 const image = document.getElementById("image");
+const mainBody = document.getElementById("mainBody")
 
 // Sets paths for image carousel
 const imageFiles = ["../src/images/image1.jpg", "../src/images/image2.jpg", "../src/images/image3.jpg"];
@@ -73,3 +74,9 @@ imageDiv.addEventListener("click", function() {
      // 200 sets time of 0.2s for transition
   }, 200);
 });
+
+// Set 200ms timeout on page load before adding the transition class
+// to avoid issues with flashbang on page load.
+setTimeout(() => {
+  mainBody.classList.add("enableTransition");
+}, 200);
