@@ -46,7 +46,7 @@ function applyColors(counter, colors) {
 }
 
 // Call the preloadImages function to start loading the images
-preloadImages();
+// preloadImages();
 
 // Changes the image to the one linked to our counter
 image.src = imageFiles[counter];
