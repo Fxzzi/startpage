@@ -9,7 +9,7 @@ const image = document.getElementById("image");
 const mainBody = document.getElementById("mainBody")
 
 // Sets paths for image carousel
-const imageFiles = ["../src/images/image1.jpg", "../src/images/image2.jpg", "../src/images/image3.jpg"];
+const imageFiles = ["../src/images/image1.webp", "../src/images/image2.webp", "../src/images/image3.webp"];
 
 // Set color variables for hex codes we use more than once
 const tokyoNightPurple = "#bb9af7";
