@@ -1,7 +1,6 @@
 @font-face {
 	font-family: "SpaceMono";
-	src: local("SpaceMono Nerd Font"),
-		url("./SpaceMono.ttf");
+	src: local("SpaceMono Nerd Font"), url("./SpaceMono.ttf");
 }
 
 :root {

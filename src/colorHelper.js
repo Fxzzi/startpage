@@ -74,9 +74,3 @@ imageDiv.addEventListener("click", function() {
      // 200 sets time of 0.2s for transition
   }, 200);
 });
-
-// Set 200ms timeout on page load before adding the transition class
-// to avoid issues with flashbang on page load.
-setTimeout(() => {
-  mainBody.classList.add("enableTransition");
-}, 200);
