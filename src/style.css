@@ -1,6 +1,6 @@
 @font-face {
-	font-family: "SpaceMono";
-	src: local("SpaceMono Nerd Font"), url("./SpaceMono.ttf");
+	font-family: "JetBrainsMono";
+	src: url("./JetBrainsMono.ttf");
 }
 
 :root {
@@ -19,13 +19,13 @@ body {
 	color: var(--secondary-color);
 	background: var(--bg-color);
 	padding: 1em;
-	font-family: SpaceMono;
+	font-family: JetBrainsMono;
 }
 
 img {
 	height: 500px;
 	width: 292px;
-	margin-top: 0.5em;
+	/* margin-top: 0.5em; */
 	margin-right: 1em;
 	border-radius: 6px;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.12);
