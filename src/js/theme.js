@@ -3,7 +3,7 @@ currentIndex = currentIndex;
 const images = ["cover1.webp", "cover2.webp", "cover3.webp"];
 const colorSets = [
   {
-    "--text-color": "#cdd6f4",
+    "--text-color": "#c0caf5",
     "--hover-color": "#bb9af7",
     "--accent-color": "#7aa2f7",
     "--accent-color-2": "#f7768e",
@@ -17,7 +17,7 @@ const colorSets = [
     "--background-color": "#15191d",
   },
   {
-    "--text-color": "#cdd6f4",
+    "--text-color": "#c0caf5",
     "--hover-color": "#e0af68",
     "--accent-color": "#7aa2f7",
     "--accent-color-2": "#bb9af7",
