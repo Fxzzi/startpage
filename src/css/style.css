@@ -1,0 +1,128 @@
+:root {
+	--text-color: #cdd6f4;
+	--hover-color: #bb9af7;
+	--accent-color: #7aa2f7;
+	--accent-color-2: #f7768e;
+	--background-color: #1a1b26;
+}
+
+@font-face {
+  font-family: "SpaceMono Nerd Font";
+  font-display: swap;
+  src:
+    local("SpaceMono Nerd Font"),
+		url(../fonts/SpaceMonoNF.woff2) format("woff2"),
+    url(../fonts/SpaceMonoNF.woff) format("woff");
+}
+
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100svh;
+	background: var(--background-color);
+	overflow-x: clip;
+}
+
+body {
+  display: flex;
+  color: var(--text-color);
+  font-family:
+    SpaceMono Nerd Font,
+    monospace;
+  justify-content: center;
+  align-items: center;
+}
+
+#text {
+	transform: translateX(100vw);
+	transition: transform 0.5s ease-in-out;
+}
+
+#text.loaded {
+  transform: translateX(0vw);
+}
+
+#carouselImage {
+  height: 550px;
+  aspect-ratio: 9 / 16;
+  border-radius: 6px;
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.25),
+    0 5px 5px rgba(0, 0, 0, 0.12);
+  object-fit: cover;
+  margin-right: 2em;
+}
+
+#carouselImage:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#image {
+	opacity: 0;
+	transition: opacity 0.5s linear;
+}
+
+#image.loaded {
+	opacity: 1;
+}
+
+@media (max-width: 800px) {
+  img {
+    display: none;
+  }
+}
+
+#greeting {
+  color: var(--accent-color-2);
+  font-size: 2.5em;
+  font-weight: 900;
+  grid-column: 1/-1;
+  text-align: center;
+  display: grid;
+}
+
+#date {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: var(--accent-color);
+  display: grid;
+  grid-column: 1/-1;
+  text-align: center;
+  margin: 1em 0;
+}
+
+.header {
+  color: var(--accent-color);
+  font-size: 1.6em;
+  font-weight: 600;
+  text-align: center;
+  transition: color 0.2s ease-out;
+}
+
+#links {
+  display: grid;
+  grid-row-gap: 0.5em;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: var(--text-color);
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color ease-out 0.2s;
+}
+
+a:hover {
+  color: var(--hover-color);
+  font-style: italic;
+}
