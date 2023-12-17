@@ -28,7 +28,7 @@ const colorSets = [
 function preloadImages() {
 	for (let i = 0; i < images.length; i++) {
 		const img = new Image();
-		img.src = "../src/images" + images[i];
+		img.src = "../src/images/" + images[i];
 	}
 }
 
