@@ -1,5 +1,6 @@
 let currentIndex = localStorage.getItem("currentIndex") || document.currentScript.getAttribute('currentIndex');
 currentIndex = parseInt(currentIndex);
+
 const images = ["cover1.webp", "cover2.webp", "cover3.webp"];
 const colorSets = [
 	{
@@ -42,32 +43,28 @@ function nextImage() {
 	setTimeout(() => {
 		imageElement.src = "../src/images/" + images[currentIndex];
 		imageElement.style.opacity = 1;
-	}, 200); // Adjust the timeout to match the transition duration
+	}, 200); // Match the transition duration in style.css
 }
-
-// Preload images after the page has loaded
-window.onload = function() {
-	document.getElementById("image").classList.add('loaded');
-	document.getElementById("text").classList.add('loaded');
-
-	// Call updateColors with the initial index first
-	updateColors(currentIndex);
-
-	// Set the initial image after updating colors
-	document.getElementById("carouselImage").src = "../src/images/" + images[currentIndex];
-
-	// Preload the remaining images
-	preloadImages();
-};
-
 
 function updateColors() {
 	const colorSet = colorSets[currentIndex];
+	// Iterate through the colorSet and set the CSS variables
 	for (const [property, value] of Object.entries(colorSet)) {
 		document.documentElement.style.setProperty(property, value);
 	}
 }
 
-// Call updateColors with the initial index
+// Set colors with current index first
 updateColors(currentIndex);
 
+// Set the initial image
+document.getElementById("carouselImage").src = "../src/images/" + images[currentIndex];
+
+// Image is opacity 0 and text is translated off screen by default
+// Add the loaded class to the image and text to animate them in
+window.onload = function() {
+	document.getElementById("image").classList.add('loaded');
+	document.getElementById("text").classList.add('loaded');
+	// Preload the remaining images
+	preloadImages();
+};
