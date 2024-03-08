@@ -11,8 +11,8 @@
   color-scheme: dark;
 }
 
-* {
-  transition: all 0.2s ease-in-out;
+img {
+	transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 html {
@@ -37,13 +37,18 @@ body {
 #text,
 #image {
   opacity: 0;
-  transition: opacity 0.3s ease-in;
+	transition: opacity 0.3s ease-in;
 }
 
 #text.loaded,
 #image.loaded {
   opacity: 1;
 }
+
+#text.loaded * {
+	transition: color 0.2s ease-in-out;
+}
+
 
 #carouselImage {
   height: 550px;
@@ -89,7 +94,6 @@ body {
   font-size: 1.6em;
   font-weight: 600;
   text-align: center;
-  transition: color 0.2s ease-out;
 }
 
 #links {
@@ -106,7 +110,6 @@ a {
   color: var(--text-color);
   font-size: 1.2em;
   text-decoration: none;
-  transition: color ease-out 0.2s;
 }
 
 a:hover {
