@@ -45,7 +45,7 @@ function nextImage() {
   setTimeout(() => {
     imageElement.src = "../src/images/" + images[currentIndex];
     imageElement.style.opacity = 1;
-  }, 300); // Match the transition duration in style.css
+  }, 200); // Match the transition duration in style.css
 }
 
 function updateColors() {
