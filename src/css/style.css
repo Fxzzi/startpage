@@ -17,14 +17,21 @@ img {
     opacity 0.2s ease-in-out;
 }
 
+
 html {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100svh;
-  background: var(--background-color);
-  overflow-x: clip;
+  background-color: var(--background-color);
+  background-image: url('../bgs/topography.svg');
+	overflow-x: clip;
 }
+
+html.loaded {
+	transition: background-color 0.2s ease-in-out;
+}
+
 
 body {
   display: flex;

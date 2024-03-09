@@ -4,11 +4,11 @@
     <title>~/startpage 💤</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../src/css/style.css" rel="stylesheet" />
+    <link href="../src/css/style.css" rel="stylesheet"/>
   </head>
 
   <body>
-    <div id="image" onclick="nextImage()">
+    <div id="image" onclick="nextImage()" oncontextmenu="nextBg(); return false;">
       <img id="carouselImage" src="../src/images/cover1.webp" />
     </div>
     <div id="text">
@@ -66,4 +66,5 @@
   </body>
   <script async src="../src/js/date.js"></script>
   <script async src="../src/js/theme.js" currentIndex="0"></script>
+	
 </html>
