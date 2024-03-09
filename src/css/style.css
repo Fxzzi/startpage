@@ -17,21 +17,19 @@ img {
     opacity 0.2s ease-in-out;
 }
 
-
 html {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100svh;
   background-color: var(--background-color);
-  background-image: url('../bgs/topography.svg');
-	overflow-x: clip;
+  background-image: url("../bgs/topography.svg");
+  overflow-x: clip;
 }
 
 html.loaded {
-	transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
-
 
 body {
   display: flex;
@@ -76,10 +74,11 @@ body {
 }
 
 @media (max-width: 800px) {
-  img, #image {
+  img,
+  #image {
     display: none;
-		margin: 0;
-		padding: 0;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -106,7 +105,6 @@ body {
   color: var(--accent-color);
   font-size: 1.6em;
   font-weight: 600;
-  text-align: center;
 }
 
 #links {
@@ -117,6 +115,8 @@ body {
 
 ul {
   list-style-type: none;
+  padding-left: 1em;
+  margin-left: 0;
 }
 
 a {
@@ -128,4 +128,12 @@ a {
 a:hover {
   color: var(--hover-color);
   font-style: italic;
+}
+
+.fazzi .urls:nth-child(even) {
+  padding-left: 1.5em;
+}
+
+#image {
+	padding-right: 1em;
 }
